@@ -1,0 +1,157 @@
+// ----------------------------------------------------------------------------
+// Pattern Library
+// Used to present the pattern library page, should NOT influence patterns
+// ----------------------------------------------------------------------------
+
+// Breakpoint indicator
+// ----------------------------------------------------------------------------
+
+.breakpoints {
+
+  @include transition(all, ease-in-out, $quick);
+
+  @include breakpoint($desktop) {
+
+    background : red;
+    color      : white;
+
+    p:after { content : ' Desktop'; }
+
+  }
+
+  @include breakpoint($laptop) {
+
+    background : orange;
+
+    p:after { content : ' Laptop'; }
+
+  }
+
+  @include breakpoint($tablet) {
+
+    background : yellow;
+
+    p:after { content : ' Tablet'; }
+
+  }
+
+  @include breakpoint($handset) {
+
+    background : green;
+    color      : white;
+
+    p:after { content : ' Handset'; }
+
+  }
+
+  @include breakpoint($oldphone) {
+
+    background : blue;
+    color      : white;
+
+    p:after { content : ' Old handset'; }
+
+  }
+
+  background : brown;
+
+  p {
+
+    text-align : center;
+    width      : 100%;
+
+  }
+
+}
+
+
+// Spans / Grid
+// ------------------------------------------------------------------------
+
+.span-12-of-12 {
+
+  @include span(12 of 12);
+  @include container;
+
+  background : $clr-grey-0;
+  color      : $clr-grey-6;
+
+}
+
+.span-4-of-12 {
+
+  @include breakpoint($oldphone) {
+
+    @include span(12 of 12);
+
+  }
+
+  @include breakpoint($handset) {
+
+    @include span(12 of 12);
+
+  }
+
+  @include breakpoint($tablet) {
+
+    @include span(6 of 12);
+
+  }
+
+  @include span(4 of 12);
+
+  background : $clr-grey-2;
+  border     : 1px solid $clr-grey-6;
+
+}
+
+.span-3-of-12 {
+
+  @include breakpoint($oldphone) {
+
+    @include span(12 of 12);
+
+  }
+
+  @include breakpoint($handset) {
+
+    @include span(12 of 12);
+
+  }
+
+  @include breakpoint($tablet) {
+
+    @include span(6 of 12);
+
+  }
+
+  @include span(3 of 12);
+
+  background : $clr-grey-2;
+  border     : 1px solid $clr-grey-6;
+
+}
+
+// Pattern library table
+// ----------------------------------------------------------------------------
+
+.table-pattern {
+
+  @include span(12 of 12);
+
+  > thead > tr, > tbody > tr  {
+
+    background: #fff;
+
+    > td, > th {
+
+      border  : 1px solid $clr-grey-5;
+      padding : em($gutter-S);
+
+    }
+
+  }
+
+
+}
+

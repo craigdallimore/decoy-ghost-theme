@@ -1,0 +1,20 @@
+{
+  "browser"  : true,
+  "eqeqeq"   : true,
+  "esnext"   : true,
+  "expr"     : true,
+  "latedef"  : true,
+  "newcap"   : false,
+  "nonew"    : true,
+  "quotmark" : true,
+  "undef"    : true,
+  "unused"   : true,
+  "strict"   : true,
+
+  "mocha"    : true,
+  "node"     : true,
+
+  "predef": []
+}
+
+

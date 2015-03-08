@@ -1,0 +1,14 @@
+{
+  "name": "Decoy",
+  "version": "0.1.0",
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "font-awesome": "^4.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-util": "^3.0.4",
+    "susy": "^2.2.2"
+  }
+}
